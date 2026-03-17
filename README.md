@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<클로브 귀여워 헤헤헤>
 <html>
 <head>
   <meta charset="UTF-8">
@@ -33,9 +33,9 @@
 
 <h2>버튼을 눌러봐!</h2>
 
-<button onclick="텍스트바꾸기('핵 꿈나무 평생 메세지 가리기')">완전히 화나게하는법</button>
-<button onclick="텍스트바꾸기('핵 꿈나무 게속 메세지 가리기')">기분 안좋게하기</button>
-<button onclick="텍스트바꾸기('핵 꿈나무 메세지 가리기')">화나게하기</button>
+<button onclick="텍스트바꾸기('핵 꿈나무 메세지 가리지않기')">세번째</button>
+<button onclick="텍스트바꾸기('핵 꿈나무 선물해주기')">두번째</button>
+<button onclick="텍스트바꾸기('핵 꿈나무 칭찬해주기')">첫번째</button>
 
 <p id="결과"></p>
 
