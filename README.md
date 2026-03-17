@@ -2,21 +2,46 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>편집 재밌다</title>
+  <title>선택하기</title>
+
+  <style>
+    body {
+      text-align: center;
+      margin-top: 100px;
+      font-family: sans-serif;
+    }
+
+    button {
+      padding: 15px;
+      margin: 10px;
+      font-size: 18px;
+      border-radius: 10px;
+      border: none;
+      background-color: skyblue;
+      cursor: pointer;
+    }
+
+    #결과 {
+      margin-top: 30px;
+      font-size: 24px;
+      font-weight: bold;
+    }
+  </style>
 </head>
 
 <body>
 
-<h1>편집 재밌다의 Github 사이트에 오신걸 환영합니다</h1>
+<h2>버튼을 눌러봐!</h2>
 
-<input type="text" id="search" placeholder="쿠팡 상품 검색">
-<button onclick="searchCoupang()">검색</button>
+<button onclick="텍스트바꾸기('평생 메세지 가리기')">완전히 화나게하는법</button>
+<button onclick="텍스트바꾸기('게속 메새지 가리기')">기분 안좋게하기</button>
+<button onclick="텍스트바꾸기('메세지 가리기')">화나게하기</button>
+
+<p id="결과"></p>
 
 <script>
-function searchCoupang() {
-  const keyword = document.getElementById("search").value;
-  const url = "https://www.coupang.com/np/search?q=" + keyword;
-  window.location.href = url;
+function 텍스트바꾸기(내용) {
+  document.getElementById("결과").innerText = 내용;
 }
 </script>
 
