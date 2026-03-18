@@ -6,7 +6,7 @@
 </audio>
 
 <script>
-  const audio = document.getElementById("myAudio");
+  const audio = document.getElementById("4 - 녹음 중.mid.rtx");
 
   function playAudio() {
     audio.play();
