@@ -1,4 +1,18 @@
-<h3>고양이 ㅎㅎ</h3>
-<img src="1773553081713.jpg" title="클로브 귀여워">
-<img src="1773553081713.jpg" width="400">
-<img src="1773553081713.jpg" width="300"> height="200">
+<button onclick="playAudio()">재생</button>
+<button onclick="pauseAudio()">정지</button>
+
+<audio id="myAudio">
+  <source src="4 - 녹음 중.mid.rtx" type="audio/mpeg">
+</audio>
+
+<script>
+  const audio = document.getElementById("myAudio");
+
+  function playAudio() {
+    audio.play();
+  }
+
+  function pauseAudio() {
+    audio.pause();
+  }
+</script>
