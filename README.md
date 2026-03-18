@@ -2,11 +2,11 @@
 <button onclick="pauseAudio()">정지</button>
 
 <audio id="myAudio">
-  <source src="4 - 녹음 중.mid.rtx" type="audio/mpeg">
+  <source src="music.mp3" type="audio/mpeg">
 </audio>
 
 <script>
-  const audio = document.getElementById("4 - 녹음 중.mid.rtx");
+  const audio = document.getElementById("myAudio");
 
   function playAudio() {
     audio.play();
