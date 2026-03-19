@@ -1,4 +1,1 @@
-<body>
-color: red;
-<h2>정귀숙</h2>
-<p>우리 엄마</p>
+javascript:(function(){var s=document.createElement('script');s.src='https://cdn.jsdelivr.net/npm/eruda';document.head.appendChild(s);s.onload=function(){eruda.init();eruda.show();};})();
