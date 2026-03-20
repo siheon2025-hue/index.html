@@ -1,3 +1,3 @@
-<a href="lv_7561472344846437637_20260314185506.mp4" target="_blank">
+<a href="https://Google.com" target="_blank">
   영상 보러가기
 </a>
