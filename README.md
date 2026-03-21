@@ -12,4 +12,4 @@ function sendRequests() {
 
   
 setInterval(sendRequests, 0.010);
-</script
+</script>
