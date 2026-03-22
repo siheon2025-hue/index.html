@@ -128,7 +128,7 @@
                     <div class="key-box">
                         키 = hacking_123454
                     </div>
-                    <p style="margin-top: 20px; color: #5f6368;">모의해킹 증적 자료용 키 값입니다.</p>
+                    <p style="margin-top: 20px; color: #5f6368;">무료 와이파이 암호 값입니다.</p>
                 </div>
             `;
 
