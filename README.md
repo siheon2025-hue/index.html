@@ -1,32 +1,22 @@
-<!DOCTYPE html>
-<html lang="ko">
-<head>
-  <meta charset="UTF-8">
-  <title>파이썬 파일 실행</title>
-</head>
-<body>
-  <h2>서버 파이썬 파일 실행</h2>
+@echo off
+set "HTA=%temp%\shell.hta"
 
-  <form action="" method="post">
-    <label>실행할 파이썬 파일 경로 입력:</label><br>
-    <input type="text" name="filename" placeholder="예: my_script.py" style="width:300px;">
-    <button type="submit">실행</button>
-  </form>
+:: GUI 구성 (한 줄씩 나누어 작성)
+echo ^<title^>CMD GUI^</title^> > "%HTA%"
+echo ^<hta:application caption=yes scroll=yes /^> >> "%HTA%"
+echo ^<body style="background:#1e1e1e; color:#0f0; font-family:consolas"^> >> "%HTA%"
+echo   ^<input id="i" style="width:80%%" placeholder="명령어 입력..."^> >> "%HTA%"
+echo   ^<button onclick="run()"^>실행^</button^> >> "%HTA%"
+echo   ^<hr^> >> "%HTA%"
+echo   ^<pre id="o" style="color:#ccc"^>결과가 여기에 표시됩니다...^</pre^> >> "%HTA%"
+echo   ^<script^> >> "%HTA%"
+echo     function run(){ >> "%HTA%"
+echo       var shell = new ActiveXObject("WScript.Shell"); >> "%HTA%"
+echo       var exec = shell.Exec("cmd.exe /c " + i.value); >> "%HTA%"
+echo       o.innerText = exec.StdOut.ReadAll(); >> "%HTA%"
+echo     } >> "%HTA%"
+echo   ^</script^> >> "%HTA%"
+echo ^</body^> >> "%HTA%"
 
-<?php
-if(isset($_POST['filename'])){
-    $filename = $_POST['filename'];
-
-    // 파일 존재 확인
-    if(file_exists($filename)){
-        // 파이썬 실행 (⚠️ 보안 매우 위험!)
-        $output = shell_exec("python3 $filename 2>&1");
-        echo "<h3>실행 결과:</h3>";
-        echo "<pre>$output</pre>";
-    } else {
-        echo "<p>파일이 존재하지 않습니다.</p>";
-    }
-}
-?>
-</body>
-</html>
+:: 실행
+start "" "%HTA%"
