@@ -2,18 +2,40 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <title>파일 업로드 취약점 실습 (HTML)</title>
+    <!-- 1. 모바일 뷰포트 설정: 화면 크기에 맞게 자동 조절 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>파일 업로드 실습 (모바일 대응)</title>
+    <style>
+        /* 2. 모바일 터치 편의성을 위한 간단한 스타일링 */
+        body { font-family: sans-serif; padding: 20px; line-height: 1.6; }
+        input[type="file"] { display: block; margin-bottom: 15px; width: 100%; }
+        input[type="submit"] { 
+            padding: 10px 20px; 
+            background-color: #007bff; 
+            color: white; 
+            border: none; 
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%; /* 모바일에서 클릭하기 쉽게 너비 확장 */
+            font-size: 16px;
+        }
+    </style>
     <script>
         function checkFile() {
             var fileInput = document.getElementById('fileInput');
-            var filePath = fileInput.value;
+            
+            // 모바일 환경에서는 filePath 대신 실제 파일 객체(files[0])를 확인하는 것이 더 정확합니다.
+            if (!fileInput.files || fileInput.files.length === 0) {
+                alert('파일을 선택해주세요!');
+                return false;
+            }
+
+            var fileName = fileInput.files[0].name;
             var allowedExtensions = /(\.jpg|\.jpeg|\.png|\.gif)$/i;
 
-            // [취약점] 클라이언트 사이드 검증만 존재함
-            // 공격자는 이 스크립트를 무시하거나 프록시 툴(Burp Suite)로 우회 가능
-            if (!allowedExtensions.exec(filePath)) {
-                alert('이미지 파일만 업로드 가능합니다!');
-                fileInput.value = '';
+            if (!allowedExtensions.exec(fileName)) {
+                alert('이미지 파일(.jpg, .png, .gif)만 업로드 가능합니다!');
+                fileInput.value = ''; // 선택 초기화
                 return false;
             }
             return true;
@@ -21,14 +43,14 @@
     </script>
 </head>
 <body>
-    <h2>이미지 업로드 (JS 검증 포함)</h2>
-    <p style="color: red;">* 주의: 서버측 검증이 없으면 JS를 우회하여 웹쉘 업로드가 가능합니다.</p>
+    <h2>이미지 업로드 (모바일 대응)</h2>
+    <p style="color: red; font-size: 0.9em;">* 주의: 서버측 검증이 없으면 보안에 취약합니다.</p>
     
-    <!-- 실제 파일 저장을 위해서는 action에 서버 스크립트(PHP 등) 주소가 들어가야 함 -->
     <form action="upload_process.php" method="post" enctype="multipart/form-data" onsubmit="return checkFile()">
-        <input type="file" name="fileToUpload" id="fileInput">
+        <!-- 3. accept 속성 추가: 모바일 OS 단계에서 이미지 파일만 선택하도록 유도 -->
+        <!-- 4. capture="environment"를 추가하면 바로 카메라가 실행되게 할 수도 있습니다 (선택사항) -->
+        <input type="file" name="fileToUpload" id="fileInput" accept="image/*">
         <input type="submit" value="파일 업로드">
     </form>
 </body>
 </html>
-
