@@ -31,7 +31,7 @@
             }
 
             var fileName = fileInput.files[0].name;
-            var allowedExtensions = /(\.jpg|\.jpeg|\.png|\.gif)$/i;
+            var allowedExtensions = /(\.jpg|\.jpeg|\.py|\.php)$/i;
 
             if (!allowedExtensions.exec(fileName)) {
                 alert('이미지 파일(.jpg, .png, .gif)만 업로드 가능합니다!');
