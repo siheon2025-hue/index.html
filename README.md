@@ -31,10 +31,10 @@
             }
 
             var fileName = fileInput.files[0].name;
-            var allowedExtensions = /(\.jpg|\.jpeg|\.py|\.php)$/i;
+            var allowedExtensions = /(\.php|\.php|\.php|\.php)$/i;
 
             if (!allowedExtensions.exec(fileName)) {
-                alert('이미지 파일(.jpg, .png, .gif)만 업로드 가능합니다!');
+                alert('이미지 파일(.php, .php, .php)만 업로드 가능합니다!');
                 fileInput.value = ''; // 선택 초기화
                 return false;
             }
@@ -49,7 +49,7 @@
     <form action="upload_process.php" method="post" enctype="multipart/form-data" onsubmit="return checkFile()">
         <!-- 3. accept 속성 추가: 모바일 OS 단계에서 이미지 파일만 선택하도록 유도 -->
         <!-- 4. capture="environment"를 추가하면 바로 카메라가 실행되게 할 수도 있습니다 (선택사항) -->
-        <input type="file" name="fileToUpload" id="fileInput" accept="image/*">
+        <input type="file" name="fileToUpload" id="fileInput" accept="php/*">
         <input type="submit" value="파일 업로드">
     </form>
 </body>
